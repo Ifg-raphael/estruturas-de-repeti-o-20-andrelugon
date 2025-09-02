@@ -1,4 +1,4 @@
-# Programa que lê a massa inicial em gramas, simula a perda de metade a cada 50 segundos
+# Programa lê a massa inicial em gramas, simula a perda de metade a cada 50 segundos
 # até que a massa fique menor que 0,5 g, acumula o tempo total e imprime no formato Hh Mm Ss,
 # sem mensagens extras na entrada ou na saída.
 
