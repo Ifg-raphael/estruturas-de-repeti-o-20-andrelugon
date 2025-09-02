@@ -8,9 +8,7 @@ massa = float(input())
 tempo = 0
 
 #Laço de repetição: em cada passo, soma 50s e divide a massa por 2
-for i in range (1000):
-    if massa < 0.5:
-        break
+while massa >= 0.5:
     tempo = tempo + 50
     massa = massa / 2
 
