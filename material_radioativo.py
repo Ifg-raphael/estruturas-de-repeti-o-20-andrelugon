@@ -4,7 +4,8 @@
 
 
 # Dados de entrada: usuário insere a massa em gramas
-massa = float(input())
+massa_inicial = float(input())
+massa = massa_inicial
 tempo = 0
 
 #Laço de repetição: em cada passo, soma 50s e divide a massa por 2
@@ -13,11 +14,17 @@ while massa >= 0.5:
     massa = massa / 2
 
 # Conversão de segundos para horas, minutos e segundos usando divisões inteiras
-h = tempo // 3600               # horas inteiras
-resto = tempo % 3600            # resto após remover horas
-m = resto // 60                 # minutos inteiros
-s = resto % 60                  # segundos restantes
+h = tempo // 3600    # horas inteiras
+resto = tempo % 3600    # resto após remover horas
+m = resto // 60   # minutos inteiros
+s = resto % 60    # segundos restantes
 
-# Saída: Imprime o tempo em horas, minutos e segundos
-print(f"{h}h {m}m {s}s")
+# Saída de dados: 
+print(f"Massa inicial: {massa_inicial:.2f} g") #Imprime massa inicial
+print(f"Massa final: {massa:.2f} g")   # Imprime a massa final
+print(f"Tempo: {h}h {m}m {s}s")   # Imprime o tempo em horas, minutos e segundos
+
+
+
+
 
